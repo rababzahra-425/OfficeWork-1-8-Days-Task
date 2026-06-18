@@ -1,14 +1,11 @@
-/* ==========================================================================
-   1. Universal Reset & Root Settings
-   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures predictable box model calculations */
+    box-sizing: border-box; 
 }
 
 html {
-    font-size: 16px; /* Base for rem units */
+    font-size: 16px; 
 }
 
 body {
@@ -19,12 +16,10 @@ body {
     padding: 2.5rem;
 }
 
-/* ==========================================================================
-   2. Layout Structure
-   ========================================================================== */
+
 .container {
     max-width: 800px;
-    margin: 0 auto; /* Centers the main container */
+    margin: 0 auto;
 }
 
 .card {
@@ -49,22 +44,16 @@ body {
     margin-bottom: 1rem;
 }
 
-/* ==========================================================================
-   3. Box Model Depth Demonstration
-   ========================================================================== */
 .inner-box {
     background-color: #e8f4fd;
     color: #2b6cb0;
-    padding: 1.5rem;          /* Internal spacing */
-    border: 2px dashed #3498db; /* Border layer */
-    margin-top: 1rem;        /* External spacing preventing collapse here */
+    padding: 1.5rem;          
+    border: 2px dashed #3498db; 
+    margin-top: 1rem;        
     font-weight: 600;
     text-align: center;
 }
 
-/* ==========================================================================
-   4. Display Properties Section
-   ========================================================================== */
 .block-element {
     background-color: #2ecc71;
     color: white;
@@ -73,7 +62,6 @@ body {
     border-radius: 6px;
 }
 
-/* Inline Elements Behavior */
 .inline-container {
     margin: 1.5rem 0;
     background-color: #fff9db;
@@ -84,8 +72,8 @@ body {
 .inline-element {
     background-color: #e74c3c;
     color: white;
-    padding: 15px; /* Vertical padding will overlap visually, showing inline limitations */
-    margin: 20px;  /* Vertical margin will be ignored by browser */
+    padding: 15px; 
+    margin: 20px;  
     font-weight: bold;
 }
 
@@ -95,13 +83,12 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Inline-Block Resolution (Best Practice for interactive elements) */
 .inline-block-container {
     margin-top: 1.5rem;
 }
 
 .button-element {
-    display: inline-block; /* Resolves inline styling limitations */
+    display: inline-block; 
     text-decoration: none;
     background-color: #9b59b6;
     color: white;
