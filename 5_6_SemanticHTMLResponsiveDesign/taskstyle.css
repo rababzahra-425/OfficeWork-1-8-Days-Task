@@ -13,7 +13,6 @@ body {
     color: #333;
 }
 
-/* Header & Nav: Mobile par ek ke upar ek aayenge (Stacked) */
 .site-header {
     background-color: #2c3e50;
     color: white;
@@ -32,7 +31,6 @@ body {
     display: inline-block;
 }
 
-/* Main Content Padding */
 .content-wrapper {
     padding: 15px;
 }
@@ -45,7 +43,6 @@ body {
     text-align: center;
 }
 
-/* Articles Container: Mobile par vertical stacking */
 .articles-grid {
     display: flex;
     flex-direction: column;
@@ -73,20 +70,18 @@ body {
    2. MEDIA QUERIES (Responsive Layout Changes)
    ========================================= */
 
-/* Breakpoint 1: Tablets (Width 481px se barhi ho) */
 @media (min-width: 481px) {
     .content-wrapper {
         padding: 30px;
     }
     
-    /* Articles mobile par 1 column the, ab tablet par 2 columns ho jayenge */
     .articles-grid {
         flex-direction: row;
         flex-wrap: wrap;
     }
     
     .post-card {
-        flex: 1 1 calc(50% - 15px); /* Har card 50% width lega */
+        flex: 1 1 calc(50% - 15px); 
     }
 }
 
